@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>MaterializeCSS - Criando um layout!</title>
+
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection">
+    <link type="text/css" rel="stylesheet" href="css/estilo.css"/>
+  </head>
+
+  <body>
+
+    <!-- dropdown menu -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="interna.html">História</a></li>
+      <li><a href="interna.html">Missão</a></li>
+      <li class="divider"></li>
+      <li><a href="interna.html">Presidente</a></li>
+    </ul>
+    <!-- ./dropdown menu -->
+
+    <!-- navbar -->
+    <div class="navbar-fixed">
+      <nav class="grey darken-4">
+        <div class="nav-wrapper">
+
+          <a href="index.html" class="brand-logo">MaterializeCSS</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+          <!-- menu -->
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#!" class="dropdown-button" data-activates="dropdown1">Quem Somos <i class="material-icons right">arrow_drop_down</i></a></li>
+
+            <li><a href="#" onclick="$('html,body').animate({scrollTop: $('.servico').offset().top-50}, 1000);">Serviços</a></li>
+            <li><a href="#" onclick="$('html,body').animate({scrollTop: $('.equipe').offset().top-50}, 1000);">Equipe</a></li>
+            <li><a href="#" onclick="$('html,body').animate({scrollTop: $('.localizacao').offset().top-50}, 1000);">localização</a></li>
+            <li><a href="#" onclick="$('html,body').animate({scrollTop: $('.fale-conosco').offset().top-50}, 1000);">Fale Conosco</a></li>
+          </ul>
+          <!-- ./menu -->
+
+          <!-- menu-mobile -->
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="#!">História</a></li>
+            <li><a href="#!">Missão</a></li>
+            <li><a href="#!">Presidente</a></li>
+            <li class="divider"></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="produtos.html">Serviços</a></li>
+            <li><a href="fale-conosco.html">Equipe</a></li>
+            <li><a href="fale-conosco.html">localização</a></li>
+            <li><a href="fale-conosco.html">Fale Conosco</a></li>
+          </ul>
+          <!-- ./menu-mobile -->
+
+        </div>
+      </nav>
+    </div>
+    <!-- ./navbar -->
+
+    <!-- slider -->
+    <div class="slider-tmp-02">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+
+            <div class="slider">
+              <ul class="slides">
+
+                <li>
+                  <img src="img/slider/img01.jpg">
+                  <div class="caption center-align">
+                    <h3>Aprenda MaterializeCSS!</h3>
+                    <h5 class="text-slider-sub">
+                      Curso rápido e prático!
+                    </h5>
+                  </div>
+                </li>
+
+                <li>
+                  <img src="img/slider/img02.jpg">
+                  <div class="caption left-align">
+                    <h3>Aprenda JavaScript!</h3>
+                    <h5 class="text-slider-sub">
+                      Curso prático e eficaz!
+                    </h5>
+                  </div>
+                </li>
+
+                <li>
+                  <img src="img/slider/img03.jpg">
+                  <div class="caption right-align">
+                    <h3>Aprenda PHP agora mesmo!</h3>
+                    <h5 class="text-slider-sub">
+                      Aprenda de forma rápida e ágil!
+                    </h5>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./slider -->
+
+    <!-- servicos -->
+    <section class="servico">
+      <div class="row">
+        <div class="col s12">
+          <h2 class="center-align">Nossos Serviços</h2>
+          <p class="flow-text center-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit, erat in accumsan pretium, magna urna auctor justo, eu pharetra mauris nibh bibendum dui.</p>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col s12 m3 center-align">
+          <i class="large material-icons">language</i>
+          <p class="flow-text">Serviço 1</p>
+          <a class="waves-effect waves-light btn">Veja mais</a>
+        </div>
+
+        <div class="col s12 m3 center-align">
+          <i class="large material-icons">perm_identity</i>
+          <p class="flow-text">Serviço 2</p>
+          <a class="waves-effect waves-light btn">Veja mais</a>
+        </div>
+
+        <div class="col s12 m3 center-align">
+          <i class="large material-icons">email</i>
+          <p class="flow-text">Serviço 3</p>
+          <a class="waves-effect waves-light btn">Veja mais</a>
+        </div>
+
+        <div class="col s12 m3 center-align">
+          <i class="large material-icons">grade</i>
+          <p class="flow-text">Serviço 4</p>
+          <a class="waves-effect waves-light btn">Veja mais</a>
+        </div>
+      </div>
+    </section>
+    <a name="servicos"></a>
+    <!-- ./servicos -->
+
+    <!-- equipe -->
+    <section class="equipe grey lighten-2 equipe">
+      <div class="row">
+        <div class="col s12">
+
+          <h2 class="center-align">Nossa Equipe</h2>
+          <p class="flow-text center-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit, erat in accumsan pretium, magna urna auctor justo, eu pharetra mauris nibh bibendum dui.</p>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m4">
+
+          <div class="card">
+            <div class="card-image">
+              <img src="img/equipe01.jpg">
+              <span class="card-title">Jaison Schmidt</span>
+            </div>
+            <div class="card-content">
+              <p>Webdesigner</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Veja mais</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col s12 m4">
+
+          <div class="card">
+            <div class="card-image">
+              <img src="img/equipe01.jpg">
+              <span class="card-title">Jaison Schmidt</span>
+            </div>
+            <div class="card-content">
+              <p>Webdesigner</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Veja mais</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col s12 m4">
+
+          <div class="card">
+            <div class="card-image">
+              <img src="img/equipe01.jpg">
+              <span class="card-title">Jaison Schmidt</span>
+            </div>
+            <div class="card-content">
+              <p>Webdesigner</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Veja mais</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- ./equipe -->
+
+    <!-- localização -->
+    <section class="localizacao">
+      <div class="row">
+        <h2 class="center-align">Localização</h2>
+        <p class="flow-text center-align">Saiba onde estamos!</p>
+      </div>
+      <div class="row">
+
+        <div class="col s12 m8">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112451.38014271873!2d-52.477753251760994!3d-28.264813744568993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e2bf7ecbc632df%3A0x8370fe5f60075c2b!2sPasso+Fundo%2C+RS!5e0!3m2!1spt-BR!2sbr!4v1446208413860" width="100%" height="350" frameborder="0" style="border:0" class="z-depth-3" allowfullscreen></iframe>
+        </div>
+        <div class="col s12 m4">
+
+          <div class="chip chip-custom">
+            Av. Rio Grande
+            <i class="material-icons">location_on</i>
+          </div>
+
+          <div class="chip chip-custom">
+            Passo Fundo
+            <i class="material-icons">location_on</i>
+          </div>
+
+          <div class="chip chip-custom">
+            Rio Grande do Sul
+            <i class="material-icons">location_on</i>
+          </div>
+
+          <div class="chip chip-custom">
+            +55 54 0000.0000
+            <i class="material-icons">call</i>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- ./localização -->
+
+    <!-- fale conosco -->
+    <section class="fale-conosco grey darken-3 white-text">
+      <div class="row">
+        <div class="col s12">
+
+          <h2 class="center-align">Fale Conosco</h2>
+          <p class="flow-text center-align">Preencha o formulário para entrar em contato!</p>
+
+        </div>
+      </div>
+
+      <div class="row nomb">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="first_name" type="text" class="validate">
+              <label for="first_name">Primeiro nome:</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Último nome:</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email:</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <label for="textarea1">Mensagem:</label>
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 center-align">
+              <button type="submit" class="waves-effect waves-light btn btn-large">Enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- ./fale conosco -->
+
+    <!-- rodape -->
+    <footer class="page-footer blue-grey darken-2 rodape">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">+55 54 0000.0000</h5>
+          <p class="grey-text text-lighten-4">
+            CNPJ: 0000000000
+          </p>
+          <p class="grey-text text-lighten-4">
+            Horário de funcionamento: 9 as 12
+          </p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Menu</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        © 2014 Copyright Jaison Schmidt
+        <a class="grey-text text-lighten-4 right" href="#!">Empresa</a>
+      </div>
+    </footer>
+    <!-- ./rodape -->
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('.slider').slider({
+          full_width: true,
+          indicators: false,
+          transition: 2000,
+          interval:4000
+        });
+        $(".dropdown-button").dropdown();
+        $(".button-collapse").sideNav();
+        $(document).off('click', '.chip .material-icons');
+        // .equipe, .servico, .localizacao, .fale-conosco, .rodape
+
+        var options = [
+          { selector: '.servico', offset: 0, callback: 'Materialize.fadeInImage(".servico")' },
+          { selector: '.equipe', offset: 50, callback: 'Materialize.fadeInImage(".equipe")' },
+          { selector: '.localizacao', offset: 50, callback: 'Materialize.fadeInImage(".localizacao")' },
+          { selector: '.fale-conosco', offset: 50, callback: 'Materialize.fadeInImage(".fale-conosco")' },
+          { selector: '.rodape', offset: 50, callback: 'Materialize.fadeInImage(".rodape")' },
+        ];
+
+        Materialize.scrollFire(options);
+
+        $("#nav-mobile > li > a").click(function(e){
+          e.preventDefault();
+        });
+
+      });
+
+    </script>
+
+  </body>
+</html>
